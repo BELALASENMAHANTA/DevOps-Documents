@@ -1,5 +1,6 @@
-13-Docker-Install-Amazon Linux
---------------------------------------
+
+-----------------------Docker downlod ------------
+
 $ sudo yum update -y
 $ sudo yum install docker -y
 $ sudo service docker start
@@ -15,6 +16,7 @@ $ exit
   (This is in mobaxtrem)
 
 -------------Docker commands ---------------------
+
 # see docker info
 $docker info
 
