@@ -1,1 +1,49 @@
 13-Docker-Install-Amazon Linux
+--------------------------------------
+$ sudo yum update -y
+$ sudo yum install docker -y
+$ sudo service docker start
+
+# add user to docker group by executing below command
+$ sudo usermod -aG docker ec2-user
+
+$ docker info
+
+# Restart the session
+$ exit
+  The press 'R' to restrat the session
+  (This is in mobaxtrem)
+
+-------------Docker commands ---------------------
+# see docker info
+$docker info
+
+# To see docker images execute below command
+$ docker images
+
+# pulling hello-world docker image
+$ docker pull hello-world
+
+# see docker image
+$ docker images
+
+# Runninghello-world docker-image
+$ docker run hello-world
+
+-----------------Working with Spring boot Application using Docker--------------
+
+# pulling docker image from docker hub
+$ docker pull ashokit/spring-boot-rest-api
+
+# see docker images after pulling
+$ docker images
+
+# Run docker images in detached mode
+$ docker run -d  -p 9090:9090 ashokit/spring-boot-rest-api
+
+  Note : host-port : guest-port
+  All custom TCP port with ranges as 9090 for all traffic in EC2 security Group 
+
+# To see runing docker containers.
+$ docker ps
+
